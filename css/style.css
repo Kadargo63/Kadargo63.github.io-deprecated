@@ -7,7 +7,10 @@ body {
     color: turquoise;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+:root {
+    --primary color: 
 
+}
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -23,3 +26,103 @@ header {
     background-attachment: fixed;
     background-position: 80%;
 }
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: cornflowerblue;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: #fce138;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* HEADER/NAV STYLES END */
+
+/* FOOTER STYLES START */
+footer {
+    background-color: slateblue;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+footer h2 {
+    color: springgreen;
+    font-size: 30px;
+    margin: 0;
+}
+/* FOOTER STYLES END */
+
+/* HERO STYLES START */
+.hero {
+    background-image: url('../assets/NOLA2021.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/* HERO STYLES END */
+
+/* SECTION TITLE STYLES START */
+
+/* SECTION TITLE STYLES START */
+
+/*  ABOUT ME STYLES START */
+.bio {
+    background-image: url('../assets/NOLA2021.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/*  ABOUT ME STYLES END */
+
+/*  MY WORK STYLES START */
+.projects {
+    background-color: springgreen;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project {
+    margin: 20px;
+    flex: 1
+}
+}
+
+/*  MY WORK STYLES END */
+
+/*  CONTACT ME STYLES START */
+
+/*  CONTACT ME STYLES END */
