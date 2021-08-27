@@ -1,3 +1,25 @@
-div {
-    width: fit-content;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: turquoise;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER / NAV BAR STYLES START */
+
+header {
+    padding: 20px 30px;
+    background-color: turquoise;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-image: url('../assets/NOLA2021.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
 }
