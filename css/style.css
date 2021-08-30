@@ -124,5 +124,129 @@ footer h2 {
 /*  MY WORK STYLES END */
 
 /*  CONTACT ME STYLES START */
-
+.contact-me {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact {
+    flex: 1
+}
+.contact-card .grid-item-header {
+    text-decoration: none;
+}
+.contact-card a, .contact-card a:hover {
+    color: inherit
+}
+.contact-info {
+    color: #fff;
+    padding-top: 75px;
+    padding-right: 55%;
+    padding-left: 50px;
+    background-color: #1f4954;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+}
+.section {
+    width: 1280px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    margin: 240px auto 0;
+    padding: 40px
+}
+.section-header {
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 160px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex: 1 100%;
+}
+html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, li, label, table {
+    border: 0;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+div {
+    display: block;
+}
+.grid-item-header-left {
+    margin-top: 0;
+    max-width: 440px;
+    margin-left: 0;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 58px;
+}
+.grid-item-header {
+    font-size: 46px;
+    line-height: 1.3em;
+    margin: 60px auto 0.65em;
+    transform: translateZ(0);
+    font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 680px;
+    z-index: 10;
+    letter-spacing: -0.3px;
+}
+.grid-item
 /*  CONTACT ME STYLES END */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700)
+.section-header {
+    font-size: 18vw;
+}
+@media (max-width: 520px)
+.contact-info {
+    padding-top: 45px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+@media (max-width:600px)
+.section {
+    padding: 15px;
+}
+.grid-item-header {
+    font-size: 9.5vmin;
+    max-width: 80%;
+}
+@media (max-width:800px)
+.contact-info {
+    padding-right: 50px;
+    height: auto;
+}
+@media (max-width: 900px)
+.section {
+    padding-right: 30px;
+    padding-left: 30px;
+}
