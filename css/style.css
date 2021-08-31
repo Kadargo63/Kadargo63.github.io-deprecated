@@ -231,6 +231,30 @@ div {
     z-index: 10;
     letter-spacing: -0.3px;
 }
+.grid-item-divider-left {
+    margin-left: 0;
+    right: initial;
+    transform: scaleX(1);
+}
+.grid-item-divider {
+    display: block;
+    position: relative;
+    height: 3px;
+    background-color: currentColor;
+    width: 60px;
+    right: 0;
+    margin: 60px auto 30px;
+    transform: scaleX(0.8);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.contact-picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #e7e8ed;
+}
 .contact-picture-img {
     height: 100%;
     width: 100%;
@@ -240,7 +264,17 @@ img[Attributes Style] {
     width: 1160px;
     aspect-ratio: auto 1160 / 1160;
 }
-.grid-item
+.grid-item-text-left {
+    max-width: 70%;
+    margin: 0 0 2em;
+}
+grid-item-text {
+    margin: 0 auto 60px;
+    width: 80%;
+    z-index: 10;
+    max-width: 500px;
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 /*  CONTACT ME STYLES END */
 
 /* MEDIA QUERIES */
