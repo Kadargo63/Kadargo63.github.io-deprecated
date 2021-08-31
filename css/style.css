@@ -162,6 +162,27 @@ footer h2 {
     position: relative;
     box-sizing: border-box;
 }
+.contact-link {
+    padding: 4px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 55px;
+    vertical-align: top;
+}
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.contact-link-twitter {
+    padding-top: 5px;
+}
+.contact-link-linkedin {
+    padding-top: 5px;
+}
+.contact-link-github {
+    padding-top: 5px;
+}
 .section {
     width: 1280px;
     max-width: 100%;
@@ -278,16 +299,19 @@ grid-item-text {
 /*  CONTACT ME STYLES END */
 
 /* MEDIA QUERIES */
-
+@media (max-width: 900px)
+.section {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+@media (max-width:800px)
+.contact-info {
+    padding-right: 50px;
+    height: auto;
+}
 @media screen and (max-width: 700)
 .section-header {
     font-size: 18vw;
-}
-@media (max-width: 520px)
-.contact-info {
-    padding-top: 45px;
-    padding-right: 30px;
-    padding-left: 30px;
 }
 @media (max-width:600px)
 .section {
@@ -297,13 +321,10 @@ grid-item-text {
     font-size: 9.5vmin;
     max-width: 80%;
 }
-@media (max-width:800px)
+@media (max-width: 520px)
 .contact-info {
-    padding-right: 50px;
-    height: auto;
-}
-@media (max-width: 900px)
-.section {
+    padding-top: 45px;
     padding-right: 30px;
     padding-left: 30px;
 }
+
