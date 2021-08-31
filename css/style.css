@@ -11,6 +11,20 @@ body {
     --primary color: 
 
 }
+div {
+    display: block;
+}
+.layout-portfolio {
+    text-align: center;
+    font-size: 16px;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Ariel,sans-serif;
+    height: 100%;
+    background-color: #fff;
+}
+body {
+    position: relative;
+    font:
+}
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -216,6 +230,15 @@ div {
     max-width: 680px;
     z-index: 10;
     letter-spacing: -0.3px;
+}
+.contact-picture-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+img[Attributes Style] {
+    width: 1160px;
+    aspect-ratio: auto 1160 / 1160;
 }
 .grid-item
 /*  CONTACT ME STYLES END */
