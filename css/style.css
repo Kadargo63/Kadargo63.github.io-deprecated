@@ -10,10 +10,13 @@ body {
     padding: 0;
     height: 100%;
     color: turquoise;
-}
-:root {
-    --primary color: 
 
+}
+html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, li, label, table {
+    border: 0;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
 }
 h3 {
     display: block;
@@ -41,21 +44,20 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
-grid-container {
-    display: grid
-    width: 100%
+.grid-container {
+    display: grid;
+    width: 100%;
 }
 /* HEADER / NAV BAR STYLES START */
 
 header {
     padding: 20px 30px;
-    background-color: turquoise;
+    background-color: rgb(15, 236, 214);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    background-image: url('../assets/NOLA2021.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -178,6 +180,7 @@ footer h2 {
     display: block;
     opacity: 0;
 }
+
 .grid-item-portfolio {
     color: #fff;
     background-color: aquamarine
@@ -233,7 +236,7 @@ svg[Attributes Style] {
     margin: 0 auto;
     width: 125px;
     height: 112px;
-    background-image: url(../assets/NOLA2021.jpg;
+    background-image: url(../assets/download.jfif);
     background-size:2625px 225px;
     background-position: 0 0;
     position: absolute;
@@ -312,12 +315,7 @@ svg[Attributes Style] {
     pointer-events: none;
     flex: 1 100%;
 }
-html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, li, label, table {
-    border: 0;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-}
+
 a {
     color: inherit;
 }
