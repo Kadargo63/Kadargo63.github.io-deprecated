@@ -4,26 +4,46 @@
     padding: 0;
 }
 body {
+    position: relative;
+    font: normal 16px/1.9em "Inter", "Source Sans Pro", "Helvetica Neue", Ariel, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
     color: turquoise;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 :root {
     --primary color: 
 
 }
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 div {
     display: block;
+}
+p {
+    margin-bottom: 2em;
 }
 .layout-portfolio {
     text-align: center;
     font-size: 16px;
     font-family: Inter,Source Sans Pro,Helvetica Neue,Ariel,sans-serif;
     height: 100%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 body {
-    position: relative;
-    font:
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+grid-container {
+    display: grid
+    width: 100%
 }
 /* HEADER / NAV BAR STYLES START */
 
@@ -51,7 +71,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: #fce138;
+    color: #0d45bd;
 }
 
 header nav {
@@ -72,6 +92,11 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+header nav ul li a:hover {
+    background: #14e9e9;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 /* HEADER/NAV STYLES END */
 
 /* FOOTER STYLES START */
@@ -133,6 +158,88 @@ footer h2 {
     margin: 20px;
     flex: 1
 }
+.grid-item-button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 17px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    transform-origin: 0 0;
+    will-change: transform, opacity;
+    transform: scaleY(0) translateZ(0);
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+.grid-item-button-label {
+    transform: translateY(-15px);
+    transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,opacity 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    display: block;
+    opacity: 0;
+}
+.grid-item-portfolio {
+    color: #fff;
+    background-color: aquamarine
+    padding-bottom: 100px;
+}
+.grid-item-runbuddy {
+    color: #fff;
+    background-color: #94093e
+    padding-bottom: 100px;
+}
+.grid-item-fanpage {
+    color: #fff;
+    background-color: #375acf
+    padding-bottom: 100px;
+}
+.grid-items {
+    display: flex;
+    flex-flow: row wrap;
+}
+.grid-item-wide {
+    flex: 1 100%;
+    padding-bottom: 20px;
+}
+.grid-item {
+    flex: 1 50%;
+    padding: 30px 50px 60px;
+    min-height: 500px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    color: #fff
+}
+.case-item-content {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.case-item-icon {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;;
+}
+svg[Attributes Style] {
+    width: 114.688;
+    height: 114.688
+}
+.grid-item-portfolio-block {
+    margin: 0 auto;
+    width: 125px;
+    height: 112px;
+    background-image: url(../assets/NOLA2021.jpg;
+    background-size:2625px 225px;
+    background-position: 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /*  MY WORK STYLES END */
@@ -289,7 +396,7 @@ img[Attributes Style] {
     max-width: 70%;
     margin: 0 0 2em;
 }
-grid-item-text {
+.grid-item-text {
     margin: 0 auto 60px;
     width: 80%;
     z-index: 10;
@@ -298,33 +405,96 @@ grid-item-text {
 }
 /*  CONTACT ME STYLES END */
 
-/* MEDIA QUERIES */
-@media (max-width: 900px)
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px)
 .section {
     padding-right: 30px;
     padding-left: 30px;
 }
-@media (max-width:800px)
+header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+} 
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+header nav ul li a {
+    font-size: 20px;
+}
+footer h2, footer div {
+    text-align: center;
+    width: 100%;
+}
+.hero-cta, .hero-form {
+    width: 100%;
+}
+.section-title {
+    width: 80%;
+}
+.contact-info iframe{
+    flex: 1 100%;
+}
+@media screen and (max-width:800px)
 .contact-info {
     padding-right: 50px;
     height: auto;
 }
-@media screen and (max-width: 700)
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768PX)
 .section-header {
     font-size: 18vw;
 }
+section {
+    padding: 30px 15px;
+}
+
 @media (max-width:600px)
 .section {
     padding: 15px;
+}
+.grid-item {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.section-header {
+    font-size: 18vw;
 }
 .grid-item-header {
     font-size: 9.5vmin;
     max-width: 80%;
 }
-@media (max-width: 520px)
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    /* this will be applied on any screen smaller than 575px */
 .contact-info {
     padding-top: 45px;
     padding-right: 30px;
     padding-left: 30px;
+}
+.hero-form button {
+    width: 100%;
+}
+.section-title {
+    width: 95%;
+}
+.intro p {
+    width: 100%;
+}
+.grid-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact-info {
+    text-align: center;
+}
+.contact-info > * {
+    flex: 0 100%;
 }
 
