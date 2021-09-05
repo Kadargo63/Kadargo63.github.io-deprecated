@@ -218,6 +218,21 @@ footer h2 {
     text-decoration: none;
     color: #fff
 }
+.case-item-hi .grid-item-bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 400px;
+}
+.grid-item-bg {
+    transition: transform 0.3 cubic-bezier(0.215, 0.610, 0.355, 1)
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .case-item-content {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -227,6 +242,11 @@ footer h2 {
     max-width: 100%;
     max-height: 100%;
     position: relative;;
+}
+.case-item-hi {
+    background-color: #d7e0e5;
+    color: #000;
+    padding-bottom: 60px;
 }
 svg[Attributes Style] {
     width: 114.688;
@@ -248,10 +268,7 @@ svg[Attributes Style] {
 /*  MY WORK STYLES END */
 
 /*  CONTACT ME STYLES START */
-.contact-me {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 .contact {
     flex: 1
@@ -385,6 +402,11 @@ div {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+svg[Attributes Style] {
+    fill: rgb(255, 255, 255);
+    width: 62;
+    height: 60;
 }
 img[Attributes Style] {
     width: 1160px;
