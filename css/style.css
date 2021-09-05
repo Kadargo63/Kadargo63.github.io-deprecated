@@ -12,7 +12,7 @@ body {
     color: turquoise;
 
 }
-html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, li, label, table {
+html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, ul, li, label, table {
     border: 0;
     vertical-align: baseline;
     margin: 0;
@@ -38,7 +38,7 @@ p {
     font-size: 16px;
     font-family: Inter,Source Sans Pro,Helvetica Neue,Ariel,sans-serif;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(165, 253, 246);
 }
 body {
     color: #39a6b2;
@@ -102,7 +102,7 @@ header nav ul li a:hover {
 /* HEADER/NAV STYLES END */
 
 /* FOOTER STYLES START */
-footer {
+.footer {
     background-color: slateblue;
     padding: 40px 35px;
     display: flex;
@@ -127,6 +127,65 @@ footer h2 {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+.hero-section {
+    height: 100%;
+    max-height: 210vw;
+    position:relative;
+    margin-top: 0;
+    padding-top: calc(20px + 8vh);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.hero-tab {
+    position: relative;
+    width: 88%;
+    margin: 0 auto;
+    padding-right: 8.7vw;
+    box-sizing:border-box;
+}
+.hero-name {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vw 0;
+    box-sizing: border-box;
+    font-weight: 800;
+    font-size: calc(20px + 3.7vw);
+    z-index: 1;
+}
+.hero-henry {
+    text-align: left;
+    position: relative;
+    left: -0.9em;
+    overflow: hidden;
+    height: 1.2em;
+    border: 2px solid transparent;
+}
+.hero-name-inner {
+    display: inline-block;
+    line-height: 1em;
+    transform: translateY(1.2em);
+}
+.hero-robert {
+    overflow: hidden;
+    height: 1.2em;
+    border: 2px solid transparent;
+}
+.hero-isaacs {
+    text-align: right;
+    position: relative;
+    right: -1.85em;
+    padding-right: 8.7vw;
+    overflow: hidden;
+    height: 1.2em;
+    border: 2px solid transparent;
 }
 /* HERO STYLES END */
 
@@ -233,6 +292,13 @@ footer h2 {
     right: 0;
     bottom: 0;
 }
+.grid-item-text {
+    margin: 0 auto 60px;
+    width: 80%;
+    z-index: 10;
+    max-width: 500px;
+    transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
 .case-item-content {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -264,12 +330,12 @@ svg[Attributes Style] {
     left: 0;
     right: 0;
 }
-
+}
 /*  MY WORK STYLES END */
 
 /*  CONTACT ME STYLES START */
 
-}
+
 .contact {
     flex: 1
 }
@@ -296,6 +362,7 @@ svg[Attributes Style] {
     margin-bottom: 55px;
     vertical-align: top;
 }
+
 .contact-icon {
     width: 30px;
     height: 30px;
@@ -308,7 +375,7 @@ svg[Attributes Style] {
     padding-top: 5px;
 }
 .contact-link-github {
-    padding-top: 5px;
+    padding: 5px;
 }
 .section {
     width: 1280px;
@@ -451,16 +518,6 @@ header nav ul li a {
 footer h2, footer div {
     text-align: center;
     width: 100%;
-}
-.hero-cta, .hero-form {
-    width: 100%;
-}
-.section-title {
-    width: 80%;
-}
-.contact-info iframe{
-    flex: 1 100%;
-}
 @media screen and (max-width:800px)
 .contact-info {
     padding-right: 50px;
@@ -497,9 +554,6 @@ section {
     padding-top: 45px;
     padding-right: 30px;
     padding-left: 30px;
-}
-.hero-form button {
-    width: 100%;
 }
 .section-title {
     width: 95%;
