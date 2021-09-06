@@ -38,7 +38,7 @@ p {
     font-size: 16px;
     font-family: Inter,Source Sans Pro,Helvetica Neue,Ariel,sans-serif;
     height: 100%;
-    background-color: rgb(165, 253, 246);
+    background-color: rgb(178, 252, 246);
 }
 body {
     color: #39a6b2;
@@ -60,20 +60,21 @@ header {
     top: 0;
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 100%;
+    z-index: 102;
 }
 
 header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: cornflowerblue;
+    color: rgb(240, 221, 52);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
-    color: #0d45bd;
+    color: #801680;
 }
 
 header nav {
@@ -99,6 +100,11 @@ header nav ul li a:hover {
     color: #024e76;
     border-radius: 15px;
     text-shadow: none;
+}
+nav {
+    position: fixed;
+    top: 0;
+}
 /* HEADER/NAV STYLES END */
 
 /* FOOTER STYLES START */
@@ -302,6 +308,8 @@ footer h2 {
 .case-item-content {
     margin-top: 10px;
     margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .case-item-icon {
@@ -318,11 +326,16 @@ svg[Attributes Style] {
     width: 114.688;
     height: 114.688
 }
+.case-item-design {
+    color: #fff;
+    background-color: #000;
+    padding-bottom: 80px;
+}
 .grid-item-portfolio-block {
     margin: 0 auto;
     width: 125px;
     height: 112px;
-    background-image: url(../assets/download.jfif);
+    background-image: url(../assets/download.jf);
     background-size:2625px 225px;
     background-position: 0 0;
     position: absolute;
@@ -498,6 +511,10 @@ img[Attributes Style] {
     padding-right: 30px;
     padding-left: 30px;
 }
+.grid-item {
+    padding-left: 35px;
+    padding-right: 35px;
+}
 header {
     padding-bottom: 0;
     justify-content: center;
@@ -531,7 +548,9 @@ footer h2, footer div {
 section {
     padding: 30px 15px;
 }
-
+.grid-item {
+    flex: 1 100%;
+}
 @media (max-width:600px)
 .section {
     padding: 15px;
@@ -565,10 +584,3 @@ section {
     padding-left: 20px;
     padding-right: 20px;
 }
-.contact-info {
-    text-align: center;
-}
-.contact-info > * {
-    flex: 0 100%;
-}
-
