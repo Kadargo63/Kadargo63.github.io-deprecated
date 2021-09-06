@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    color: turquoise;
+    color: rgb(15, 126, 115);
 
 }
 html, div, span, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, del, em, img, small, strong, ol, ul, li, label, table {
@@ -40,10 +40,7 @@ p {
     height: 100%;
     background-color: rgb(178, 252, 246);
 }
-body {
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
-  }
+
 .grid-container {
     display: grid;
     width: 100%;
@@ -117,7 +114,7 @@ nav {
     width: 100%;
 }
 footer h2 {
-    color: springgreen;
+    color: rgb(3, 148, 141);
     font-size: 30px;
     margin: 0;
 }
@@ -210,6 +207,17 @@ footer h2 {
     flex-wrap: wrap;
     align-items: flex-start;
 }
+.bio ul li {
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: bold;
+}
+.bio ul :hover {
+    background: #14e9e9;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
 /*  ABOUT ME STYLES END */
 
 /*  MY WORK STYLES START */
@@ -288,6 +296,10 @@ footer h2 {
     background-repeat: no-repeat;
     background-position: center 400px;
 }
+.case-item-runbuddy .grid-item-bg {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
 .grid-item-bg {
     transition: transform 0.3 cubic-bezier(0.215, 0.610, 0.355, 1)
     background-size: cover;
@@ -305,6 +317,11 @@ footer h2 {
     max-width: 500px;
     transition: transform 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
+.grid-item-text:hover {
+    background: #14e9e9;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 .case-item-content {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -325,6 +342,11 @@ footer h2 {
 svg[Attributes Style] {
     width: 114.688;
     height: 114.688
+}
+.case-item-runbuddy {
+    background-color: salmon;
+    color: #fff;
+    padding-bottom: 160px;
 }
 .case-item-design {
     color: #fff;
@@ -453,6 +475,13 @@ div {
     max-width: 680px;
     z-index: 10;
     letter-spacing: -0.3px;
+    color: #1f4954;
+}
+.grid-item-header:hover {
+    background: #14e9e9;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 .grid-item-divider-left {
     margin-left: 0;
