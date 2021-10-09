@@ -122,7 +122,7 @@ footer h2 {
 
 /* HERO STYLES START */
 .hero {
-    background-image: url('../assets/NOLA2021.jpg');
+    background-image: url('../assets/tropical.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -256,17 +256,17 @@ footer h2 {
 
 .grid-item-portfolio {
     color: #fff;
-    background-color: aquamarine
+    background-color: aquamarine;
     padding-bottom: 100px;
 }
 .grid-item-runbuddy {
     color: #fff;
-    background-color: #94093e
+    background-color: #94093e;
     padding-bottom: 100px;
 }
 .grid-item-fanpage {
     color: #fff;
-    background-color: #375acf
+    background-color: #375acf;
     padding-bottom: 100px;
 }
 .grid-items {
@@ -301,7 +301,7 @@ footer h2 {
     background-repeat: no-repeat;
 }
 .grid-item-bg {
-    transition: transform 0.3 cubic-bezier(0.215, 0.610, 0.355, 1)
+    transition: transform 0.3 cubic-bezier(0.215, 0.610, 0.355, 1);
     background-size: cover;
     background-position: center center;
     position: absolute;
@@ -322,6 +322,7 @@ footer h2 {
     color: #024e76;
     border-radius: 15px;
     text-shadow: none;
+}
 .case-item-content {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -341,7 +342,7 @@ footer h2 {
 }
 svg[Attributes Style] {
     width: 114.688;
-    height: 114.688
+    height: 114.688;
 }
 .case-item-runbuddy {
     background-color: salmon;
@@ -365,7 +366,7 @@ svg[Attributes Style] {
     left: 0;
     right: 0;
 }
-}
+
 /*  MY WORK STYLES END */
 
 /*  CONTACT ME STYLES START */
