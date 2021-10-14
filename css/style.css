@@ -340,7 +340,7 @@ footer h2 {
     color: #000;
     padding-bottom: 60px;
 }
-svg[Attributes Style] {
+svg[AttributesStyle]{
     width: 114.688;
     height: 114.688;
 }
@@ -513,12 +513,12 @@ div {
     width: 100%;
     object-fit: cover;
 }
-svg[Attributes Style] {
+svg[AttributesStyle] {
     fill: rgb(255, 255, 255);
     width: 62;
     height: 60;
 }
-img[Attributes Style] {
+img[AttributesStyle] {
     width: 1160px;
     aspect-ratio: auto 1160 / 1160;
 }
